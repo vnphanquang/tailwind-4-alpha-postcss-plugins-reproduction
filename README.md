@@ -1,5 +1,7 @@
 # Issue using PostCSS plugins with Tailwind 4 as of 4.0.0-alpha.34
 
+See https://github.com/tailwindlabs/tailwindcss/issues/14973#issuecomment-2480498783 for discussion.
+
 ## Reproduction 
 
 1. Clone this repo
