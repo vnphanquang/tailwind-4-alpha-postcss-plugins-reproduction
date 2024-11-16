@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "4.0.0-alpha.34",
+    "@types/postcss-mixins": "^9.0.6",
+    "postcss-mixins": "^11.0.3",
+    "tailwindcss": "4.0.0-alpha.34",
     "typescript": "~5.6.2",
     "vite": "^5.4.10"
   }
