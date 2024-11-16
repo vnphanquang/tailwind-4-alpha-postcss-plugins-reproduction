@@ -13,6 +13,9 @@ Expected output: Postcss plugins should also be applied after production build
 
 Actual output: Postcss plugins are not applied after production build, only applied during dev
 
+> [!NOTE]
+> See [vite.config.ts](vite.config.ts) for the TailwindCSS & PostCSS configuration
+
 ## Additional Problem
 
 When using `postcss-mixins`, the mixin is **NOT** available within the `@utlity` scope unless directly imported or declared within it. For example, the below code does not work...
