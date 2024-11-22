@@ -18,6 +18,8 @@ Actual output: Postcss plugins are not applied after production build, only appl
 > [!NOTE]
 > See [vite.config.ts](vite.config.ts) for the TailwindCSS & PostCSS configuration
 
+Similar issues were observed for [postcss-custom-selectors](https://www.npmjs.com/package/postcss-custom-selectors) and [postcss-custom-media](https://www.npmjs.com/package/postcss-custom-media).
+
 ## Additional Problem
 
 When using `postcss-mixins`, the mixin is **NOT** available within the `@utlity` scope unless directly imported or declared within it. For example, the below code does not work...
@@ -40,3 +42,4 @@ When using `postcss-mixins`, the mixin is **NOT** available within the `@utlity`
     @mixin B;
 }
 ```
+
