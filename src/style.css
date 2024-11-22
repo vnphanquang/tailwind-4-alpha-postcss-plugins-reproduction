@@ -3,9 +3,6 @@
 @utility vite {
   /* Problem 1: mixin has to be declare/import within the @utility scope to take effect */
   @define-mixin vite {
-    mask-image: url('./lightbulb.svg');
-    mask-repeat: no-repeat;
-    mask-size: contain;
     background-color: green;
   }
 
