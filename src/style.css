@@ -1,15 +1,17 @@
-@import 'tailwindcss';
+@import 'tailwindcss/utilities';
 
-@utility vite {
-  /* Problem 1: mixin has to be declare/import within the @utility scope to take effect */
-  @define-mixin vite {
-    background-color: green;
-  }
+@define-mixin test {
+  background-color: green;
+}
 
+.test {
   width: 8rem;
   height: 8rem;
   background-color: red;
 
-  /* Problem 2: mixin does not apply during production build */
-  @mixin vite;
+  /* 
+   * Problem 2: mixin does not correctly resolved during build,
+   * same for any other custom at-rule.
+   */
+  @mixin test;
 }
